@@ -98,6 +98,9 @@ let getItemFromDynamicAv = (card) => {
 			author = _module.moduleAuthor?.author?.name;
 		} else if (_module.moduleType === 'module_desc') {
 			description += `<br/>${_module.moduleDesc?.text}`;
+		} else if (_module.moduleType === 'module_dynamic') {
+			let videoUrl = `https://www.bilibili.com/video/${_module.moduleDynamic?.dynArchive?.bvid}`;
+			description += `<br/><a href="${videoUrl}">${videoUrl}</a>`;
 		}
 	}
 	return {
