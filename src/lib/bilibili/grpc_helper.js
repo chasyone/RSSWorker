@@ -58,7 +58,7 @@ let getHeaders = (accessKey = '') => {
 		'x-bili-network-bin': network,
 		authorization: authorization,
 		'User-Agent':
-			'Dalvik/2.1.0 (Linux; U; Android 12; M2007J3SC Build/SKQ1.211006.001) 7.49.0 os/android model/M2007J3SC mobi_app/android build/7490200 channel/bili innerVer/7490210 osVer/12 network/2 grpc-java-cronet/1.36.1',
+			'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0',
 	};
 };
 
